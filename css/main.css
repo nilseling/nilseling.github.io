@@ -1,0 +1,62 @@
+#areainterest label{
+	margin-right:10px !important;
+}
+
+.container{
+	width: 100% !important;
+}
+
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  font-family: 'Avenir';
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  font-family: 'Avenir';
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  font-family: 'Avenir';
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+a:hover{
+	background-color: transparent !important;
+}
+
+
+.label-primary {
+    background-color: #742878;
+}
+
+
+@font-face {
+    font-family: Avenir;
+    font-weight: normal;
+    src: url(../fonts/avenir/Avenir-Light.ttf);
+}
+
+@font-face {
+    font-family: Avenir;
+    font-weight: bold;
+    src: url(../fonts/avenir/Avenir-Medium.ttf);
+}
+
+html,body{
+	font-family: 'Avenir';
+}
