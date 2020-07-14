@@ -1,0 +1,14 @@
+body > .nav {
+  background-color: #e3f2fd; 
+  border-bottom: 3px solid;
+}
+
+nav > .container {
+  padding: 0px 0px 0px 0px;
+}
+
+.container {
+  padding: 60px 0px 0px 0px;
+}
+
+
