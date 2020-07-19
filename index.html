@@ -10,64 +10,71 @@
         <meta name="author" content="Nils Eling">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
         <script src="https://kit.fontawesome.com/ca4e388e9b.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-    
-        <nav class="navbar navbar-expand-lg navbar-light" style="  background-color: #e3f2fd; border-bottom: 1px solid;">
-            <div class="container">
-            <a class="navbar-brand" href="#"><b>Nils Eling</b></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">
+                <span class="d-block d-lg-none">Nils Eling</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/pass_small.png" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="research.html">Research</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Software</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Publications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CV</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                    <a href="https://github.com/nilseling" target="_blank" style="color:#495057;">
+                    <a href="https://github.com/nilseling" target="_blank" style="color:#dee2e6;">
                     <i class="fab fa-github big-icon"></i>
                     </a>
-                    </li>
-                    <li class="nav-item">
-                    <a href="https://scholar.google.com/citations?user=kBIvrFoAAAAJ&hl=en" target="_blank" style="color:#495057;">
+                    <a href="https://scholar.google.com/citations?user=kBIvrFoAAAAJ&hl=en" target="_blank" style="color:#dee2e6;">
                     <i class="ai ai-google-scholar big-icon"></i>
                     </a>
                     </li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Research</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Software</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">CV</a></li>
                 </ul>
-            </div>
             </div>
         </nav>
             
             
-        <!-- About -->
-        <div class="container" id="about">
-            <h2>About me</h2>
+        <div class="container-fluid" id="about" style="background-color: #EDFBFF">
+            <h3>About me</h3>
             <p style="text-align:justify;"> 
                 I'm a postdoctoral reseracher at the <a href='http://www.bodenmillerlab.com/'>Bodenmiller laboratory</a> at the <a href="https://www.uzh.ch/en.html">University of Zurich</a>.
             </p>
         </div>
         
-    
+        <div class="container-fluid" id="interests" style="background-color: #FFFFFF">
+            <h3>Interests</h3>
+            <div class="row">
+                <div class="col">
+                    <h5>Wet lab</h5>
+                    <ul>
+                        <li>Cell culture</li>
+                        <li>Organoids</li>
+                        <li>Imaging mass cytometry</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Dry lab</h5>
+                    <ul>
+                        <li>Data analysis and visualization</li>
+                        <li>Software development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         
+        <div class="container-fluid" id="education" style="background-color: #EDFBFF">
+            <h3>Education</h3>
+        </div>
+         
     </body>
 
 </html>
