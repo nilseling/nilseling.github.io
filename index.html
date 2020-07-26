@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
         <script src="https://kit.fontawesome.com/ca4e388e9b.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+        <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
     </head>
 
     <body>
@@ -81,6 +83,43 @@
         
         <div class="container-fluid" id="education" style="background-color: #EDFBFF">
             <h3>Education</h3>
+        </div>
+        
+        <div class="container-fluid" id="coding" style="background-color: #FFFFFF">
+            <h3>Coding</h3>
+            <script>
+                anychart.onDocumentReady(function() {
+                    var data = [{"x": "R", "value": 90, category: "R", label:{fontVariant:"normal"}},
+                                {"x": "Shiny", "value": 70, category: "R"},
+                                {"x": "python", "value": 20, category: "python"},
+                                {"x": "bash", "value": 50, category: "bash"},
+                                {"x": "LaTeX", "value": 90, category: "bash"},
+                                {"x": "Git", "value": 90, category: "bash"},
+                                {"x": "gh-pages", "value": 30, category: "bash"},
+                                {"x": "gh-actions", "value": 30, category: "bash"},
+                                {"x": "Bioconductor", "value": 70, category: "R"},
+                                {"x": "RCpp", "value": 30, category: "R"},
+                                {"x": "html", "value": 20, category: "html"},
+                                {"x": "css", "value": 20, category: "html"},
+                                {"x": "JavaScript", "value": 20, category: "html"},
+                                {"x": "bootstrap", "value": 20, category: "html"}
+                                ];
+
+                    var chart = anychart.tagCloud(data);
+
+                    chart.angles([0])
+                    chart.colorRange(true);
+                    chart.colorRange().length('80%');
+                    chart.fontVariant('normal');
+                    
+                    var formatter = "{%value}{scale:(1)|(\%)}";
+                    var tooltip = chart.tooltip();
+                    tooltip.format(formatter);
+
+                    chart.container("coding");
+                    chart.draw();
+                });
+            </script>
         </div>
          
     </body>
