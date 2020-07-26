@@ -6109,7 +6109,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #6c757d !important;
+  background-color: #EDFBFF !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -10044,6 +10044,26 @@ p.lead {
   text-transform: uppercase;
 }
 #sideNav .navbar-toggler:focus {
+  outline-color: #d48a6e;
+}
+
+#topNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+#topNav .navbar {
+  background-color: aqua;
+}
+
+#topNav .navbar-brand {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+#topNav .navbar-toggler:focus {
   outline-color: #d48a6e;
 }
 
