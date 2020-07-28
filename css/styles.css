@@ -52,6 +52,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -571,12 +572,31 @@ pre code {
 .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
   width: 100%;
   padding-right: 2rem;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   padding-bottom: 2rem;
   padding-left: 2rem;
   margin-right: auto;
   margin-left: auto;
 }
+
+html, body {
+    height: 100%;
+}
+
+.my-container {
+  width: 100%;
+  padding-right: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+  overflow: hidden;
+}
+
 
 @media (min-width: 576px) {
   .container-sm, .container {
@@ -10106,6 +10126,7 @@ p.lead {
     display: block;
   }
 }
+
 .social-icons .social-icon {
   display: inline-flex;
   align-items: center;
