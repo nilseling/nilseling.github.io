@@ -65,7 +65,7 @@
     </div>
         
     <script>
-        var API = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=500&term=Nils+Eling%5BAuthor%5D';
+        var API = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&term=Nils+Eling[author]&ncbi_sortorder=pubdate';
         $.getJSON(API, function(data){
              var ids = data.esearchresult.idlist;
              for(var id=0; id<ids.length; id++){
@@ -75,13 +75,11 @@
          });
              
         function output_func(cur_url, ids, id){
-            var cur_string = String(ids[id]);
+            var cur_string = ids[id];
             $.getJSON(cur_url, function(data2){
                 var cur_res = data2.result[cur_string];
-                if(cur_res.pubdate.substring(0,4) > 2014){
-                    if(!/Author Correction/.test(cur_res.title)){
-                        $("#papers").append(formatting(cur_res));
-                    }
+                if(!/Author Correction/.test(cur_res.title)){
+                    $("#papers").append(formatting(cur_res));
                 }
              });
         }
@@ -91,7 +89,11 @@
             var i = 0;
             for(var auth in cur_res.authors){
                 i++;
-                str += cur_res.authors[auth].name;
+                if(cur_res.authors[auth].name == "Eling N"){
+                    str = str + '<u>' + cur_res.authors[auth].name + '</u>';
+                } else {
+                    str += cur_res.authors[auth].name;
+                }
                 if(i < cur_res.authors.length){
                     str += ', ';
                 }
