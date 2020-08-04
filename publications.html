@@ -68,21 +68,34 @@
         var API = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&term=Nils+Eling[author]&ncbi_sortorder=pubdate';
         $.getJSON(API, function(data){
              var ids = data.esearchresult.idlist;
+             var id_string = "";
              for(var id=0; id<ids.length; id++){
-                 var cur_url = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&rettype=abstract&id=' + ids[id];
-                 output_func(cur_url, ids, id);
+                 id_string = id_string + ids[id] + ","
              }
-         });
+            
+             var cur_url = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&rettype=abstract&id=' + id_string
              
-        function output_func(cur_url, ids, id){
-            var cur_string = ids[id];
-            $.getJSON(cur_url, function(data2){
-                var cur_res = data2.result[cur_string];
-                if(!/Author Correction/.test(cur_res.title)){
-                    $("#papers").append(formatting(cur_res));
+             $.getJSON(cur_url, function(data2){
+                for(var id2=0; id2<ids.length; id2++){
+                    var cur_res = data2.result[ids[id2]]
+                    if(id2==0){
+                        $("#papers").append('<h4>' + cur_res.pubdate.substring(0,4) + '</h4>' + '<br>');
+                        var cur_year = Number(cur_res.pubdate.substring(0,4));
+                    } else if(cur_year > Number(cur_res.pubdate.substring(0,4))){
+                        $("#papers").append('<h4>' + cur_res.pubdate.substring(0,4) + '</h4>' + '<br>');
+                        var cur_year = Number(cur_res.pubdate.substring(0,4));
+                    }
+                
+                    if(!/Author Correction/.test(cur_res.title)){
+                        if(!/31647917/.test(ids[id2])){
+                           $("#papers").append(formatting(cur_res));
+                        }
+                    }
                 }
+
              });
-        }
+                 
+         });
         
         function formatting(cur_res){
             var str = '<a style="color:#606c71" href="https://www.ncbi.nlm.nih.gov/pubmed/' + cur_res.uid + '">';
