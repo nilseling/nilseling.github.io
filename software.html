@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    
+ <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Nils Eling</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <meta name="author" content="Nils Eling">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+        <script src="https://kit.fontawesome.com/ca4e388e9b.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </head>
+
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">
+                <span class="d-block d-lg-none">Nils Eling</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a href="https://github.com/nilseling" target="_blank" style="color:#dee2e6;">
+                    <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=kBIvrFoAAAAJ&hl=en" target="_blank" style="color:#dee2e6;">
+                    <i class="ai ai-google-scholar fa-2x"></i>
+                    </a>
+                    <a href="https://hub.docker.com/u/nilseling" target="_blank" style="color:#dee2e6;">
+                    <i class="fab fa-docker fa-2x"></i>
+                    </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cytomapper">cytomapper</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#basics">BASiCS</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="container-fluid" id="navBar2">
+        
+            <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top" id="topNav">
+                <a class="navbar-brand" href="index.html">Nils Eling</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="research.html">Research</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="software.html">Software</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="publications.html">Publications</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="CV.html">CV</a></li>
+                    </ul>
+                </div>
+            </nav>
+    
+        </div>
+        
+    <div class='my-container' id="cytomapper" style="background-color: #EDFBFF">
+        <div>
+            <p style="font-size: 40px; color: black"><samp>cytomapper</samp></p>
+            <div class="row">
+                <div class="col-sm-2">
+                    <span><img class="img-fluid" src="img/cytomapper_sticker.png" alt="cytomapper" style="width:200px; mix-blend-mode: multiply;margin: 0;position: absolute;top: 50%;-ms-transform: translateY(-50%);transform: translateY(-50%);"/></span>
+                </div>
+                <div class="col-sm-10">
+                    <p style="font-size: 20px;">Highly multiplexed imaging cytometry acquires the single-cell expression of selected proteins in a spatially-resolved fashion. These measurements can be visualized across multiple length-scales. First, pixel-level intensities represent the spatial distributions of feature expression with highest resolution. Second, after segmentation, expression values or cell-level metadata (e.g. cell-type information) can be visualized on segmented cell areas. This package contains functions for the visualization of multiplexed read-outs and cell-level information obtained by multiplexed imaging cytometry. The main functions of this package allow 1. the visualization of pixel-level information across multiple channels and 2. the display of cell-level information (expression and/or metadata) on segmentation masks.</p>
+                    <p>Bioconductor: <a href="https://www.bioconductor.org/packages/release/bioc/html/cytomapper.html">https://www.bioconductor.org/packages/release/bioc/html/cytomapper.html</a></p>
+                    <p>Github: <a href="https://github.com/BodenmillerGroup/cytomapper">https://github.com/BodenmillerGroup/cytomapper</a></p>
+                    <p>Docs: <a href="https://bodenmillergroup.github.io/cytomapper/">https://bodenmillergroup.github.io/cytomapper/</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class='my-container' id="basics" style="background-color: #FFFFFF">
+        <div>
+            <p style="font-size: 40px; color: black"><samp>BASiCS</samp></p>
+            <div class="row">
+                <div class="col-sm-2">
+                    <span><img class="img-fluid" src="img/BASiCS.png" alt="BASiCS" style="width:200px; mix-blend-mode: multiply;margin: 0;position: absolute;top: 50%;-ms-transform: translateY(-50%);transform: translateY(-50%);"/></span>
+                </div>
+                <div class="col-sm-10">
+                    <p style="font-size: 20px;">Single-cell mRNA sequencing can uncover novel cell-to-cell heterogeneity in gene expression levels in seemingly homogeneous populations of cells. However, these experiments are prone to high levels of technical noise, creating new challenges for identifying genes that show genuine heterogeneous expression within the population of cells under study. BASiCS (Bayesian Analysis of Single-Cell Sequencing data) is an integrated Bayesian hierarchical model to perform statistical analyses of single-cell RNA sequencing datasets in the context of supervised experiments (where the groups of cells of interest are known a priori, e.g. experimental conditions or cell types). BASiCS performs built-in data normalisation (global scaling) and technical noise quantification (based on spike-in genes). BASiCS provides an intuitive detection criterion for highly (or lowly) variable genes within a single group of cells. Additionally, BASiCS can compare gene expression patterns between two or more pre-specified groups of cells. Unlike traditional differential expression tools, BASiCS quantifies changes in expression that lie beyond comparisons of means, also allowing the study of changes in cell-to-cell heterogeneity. The latter can be quantified via a biological over-dispersion parameter that measures the excess of variability that is observed with respect to Poisson sampling noise, after normalisation and technical noise removal. Due to the strong mean/over-dispersion confounding that is typically observed for scRNA-seq datasets, BASiCS also tests for changes in residual over-dispersion, defined by residual values with respect to a global mean/over-dispersion trend.</p>
+                    <p>Bioconductor: <a href="https://www.bioconductor.org/packages/release/bioc/html/BASiCS.html">https://www.bioconductor.org/packages/release/bioc/html/BASiCS.html</a></p>
+                    <p>Github: <a href="https://github.com/catavallejos/BASiCS">https://github.com/catavallejos/BASiCS</a></p>
+                    <p>Docs: <a href="https://bioconductor.org/packages/release/bioc/vignettes/BASiCS/inst/doc/BASiCS.html">https://bioconductor.org/packages/release/bioc/vignettes/BASiCS/inst/doc/BASiCS.html</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        
+    </body>
+
+</html>
