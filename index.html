@@ -149,17 +149,17 @@
                     var data = [{"x": "R", "value": 90, category: "R", label:{fontVariant:"normal"}},
                                 {"x": "Shiny", "value": 70, category: "R"},
                                 {"x": "python", "value": 20, category: "python"},
-                                {"x": "bash", "value": 50, category: "bash"},
-                                {"x": "LaTeX", "value": 90, category: "bash"},
-                                {"x": "Git", "value": 90, category: "bash"},
-                                {"x": "gh-pages", "value": 30, category: "bash"},
-                                {"x": "gh-actions", "value": 30, category: "bash"},
-                                {"x": "Bioconductor", "value": 70, category: "R"},
+                                {"x": "bash", "value": 50, category: "other"},
+                                {"x": "LaTeX", "value": 90, category: "other"},
+                                {"x": "Git", "value": 90, category: "other"},
+                                {"x": "gh-pages", "value": 30, category: "other"},
+                                {"x": "gh-actions", "value": 30, category: "other"},
+                                {"x": "Bioc", "value": 70, category: "R"},
                                 {"x": "RCpp", "value": 30, category: "R"},
                                 {"x": "html", "value": 20, category: "html"},
                                 {"x": "css", "value": 20, category: "html"},
                                 {"x": "JavaScript", "value": 20, category: "html"},
-                                {"x": "Docker", "value": 30, category: "bash"},
+                                {"x": "Docker", "value": 30, category: "other"},
                                 {"x": "conda", "value": 30, category: "python"},
                                 {"x": "bootstrap", "value": 20, category: "html"}
                                 ];
@@ -169,13 +169,17 @@
                     chart.angles([0])
                     chart.colorRange(true);
                     chart.colorRange().length('80%');
-                    chart.fontVariant('normal');
+                    chart.fontVariant('small-caps');
                     
                     var formatter = "{%value}{scale:(1)|(\%)}";
                     var tooltip = chart.tooltip();
                     tooltip.format(formatter);
                     
                     chart.bounds("10%", "10%", "90%", "90%");
+                    
+                    chart.angles([0, -45, 45, -20, 20]);
+                    
+                    chart.palette(anychart.palettes.sea);
 
                     chart.container("coding");
                     chart.draw();
