@@ -41,9 +41,9 @@
                         <i class="fab fa-docker fa-2x"></i>
                     </a>
                     </li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#postdoc">Postdoctoral work</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#phd">Phd work</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#masterß">MSc work</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#postdoc">PostDoc</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#phd">PhD</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#master">M.Sc.</a></li>
                 </ul>
             </div>
         </nav>
@@ -68,12 +68,18 @@
         
         <div class="my-container" id="postdoc" style="background-color: #EDFBFF">
             <div>
-                <h4>Postoctoral work</h4>
+                <h4>Postdoctoral work</h4>
                 <p style="font-size: 20px"> 
                     My main research interest is the study of transcriptional and phenotypic heterogeneity in dynamic cellular systems (see <a href="https://www.nature.com/articles/s41576-019-0130-6">Eling et al., 2019</a>).
                 </p>
                 <p>
-                    I'm currently using breast cancer organoids as model system to understand cellular processes that lead to the fomration of phenotypic heterogeneity. 
+                    I'm currently using breast cancer organoids as model system to understand cellular processes that lead to the formation of phenotypic heterogeneity. This work will support the development of personalised cancer therapies using new patient-specific model systems.
+                </p>
+                <p>
+                    In addition, I'm part of the <a href="https://immucan.eu/about-the-project/">IMMUCan</a> project to understand the interplay between tumour- and immune cells across 3000 patients and five cancer types.
+                </p>
+                <p>
+                    As part of visualizing imaging mass cytometry data, I have created the <a href="https://github.com/BodenmillerGroup/cytomapper">cytomapper</a> Bioconductor package to allow flexible and integrative data visualization in the statistical programming language R.
                 </p>
             </div>
         </div>
@@ -85,13 +91,22 @@
                     During my Phd I focused on quantifying and understanding transcriptional variability as measured by single-cell RNA sequencing (scRNAseq). 
                 </p>
                 <p>
-                    <strong>Project 1:</strong> To explore how ageing affects transcriptional changes during immune activation, we have profiled naive and activated CD4<sub>+</sub> T cells from young and olde mice. While CD4<sub>+</sub> T cells from young and old mice are similarly activated, we discovered an increase in transcriptional variability in activated T cells from aged animals. This destabilization of the immune system in form of increased cell-to-cell variability in expression now represents a key feature of cellular ageing.
+                    To explore how ageing affects transcriptional changes during immune activation, we have profiled naive and activated CD4<sub>+</sub> T cells from young and olde mice. While CD4<sub>+</sub> T cells from young and old mice are similarly activated, we discovered an increase in transcriptional variability in activated T cells from aged animals. This destabilization of the immune system in form of increased cell-to-cell variability in expression now represents a key feature of cellular ageing.<br>
+                    Paper: <a href="https://science.sciencemag.org/content/355/6332/1433">Aging increases cell-to-cell transcriptional variability upon immune stimulation</a><br>
+                    Github: <a href="https://github.com/MarioniLab/ImmuneAging2017">https://github.com/MarioniLab/ImmuneAging2017</a>
                 </p>
                 <p>
-                    <strong>Project 2:</strong> The <a href="https://www.bioconductor.org/packages/release/bioc/html/BASiCS.html">BASiCS Bioconductor package</a> can be used to estimate the gene-wise biological cell-to-cell variability. However, the biological over-dispersion of each gene is negatively associated with mean expression leading to low variability for highly expressed genes and vice versa. To avoid this confounding effect in the first project, I integrated a semi-parametric regression approach based on smooth kernels into the BASiCS framework. This allowed me to statistically test for changes in transcriptional variability independent of changes in mean expression.
+                    The <a href="https://www.bioconductor.org/packages/release/bioc/html/BASiCS.html">BASiCS Bioconductor package</a> can be used to estimate the gene-wise biological cell-to-cell variability. However, the biological over-dispersion of each gene is negatively associated with mean expression leading to low variability for highly expressed genes and vice versa. To avoid this confounding effect in the first project, I integrated a semi-parametric regression approach based on smooth kernels into the BASiCS framework. This allowed me to statistically test for changes in transcriptional variability independent of changes in mean expression.<br>
+                    Paper: <a href="https://www.cell.com/cell-systems/fulltext/S2405-4712(18)30278-3?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2405471218302783%3Fshowall%3Dtrue">Correcting the Mean-Variance Dependency for Differential Variability Testing Using Single-Cell RNA Sequencing Data</a><br>
+                    Github: <a href="https://github.com/MarioniLab/RegressionBASiCS2017">https://github.com/MarioniLab/RegressionBASiCS2017</a>
                 </p>
                 <p>
-                    <strong>Project 3:</strong> Spermatogenesis is an essential developmental process coupled to strong transcriptional changes. By perfoming multi-omics data analysis, we identified a set of spermatid-specific X-linked genes that show distinct silencing/activation dynamics during spermatogenesis. 
+                    Spermatogenesis is an essential developmental process coupled to strong transcriptional changes. By perfoming multi-omics data analysis, we identified a set of spermatid-specific X-linked genes that show distinct activation dynamics during spermatogenesis.<br>
+                    Paper: <a href="https://www.nature.com/articles/s41467-019-09182-1">Staged developmental mapping and X chromosome transcriptional dynamics during mouse spermatogenesis</a><br>
+                    Github: <a href="https://github.com/MarioniLab/Spermatogenesis2018">https://github.com/MarioniLab/Spermatogenesis2018</a> 
+                </p>
+                <p>
+                    Further projects can be found on the <a href="publications.html">Publications</a> site.
                 </p>
             </div>
         </div>
@@ -100,7 +115,8 @@
             <div>
             <h4>Master thesis</h4>
                 <p> 
-                    Oncogenic KRas reprograms pancreatic ductal adenocarcinoma (PDAC) cells to states which are highly resistant to apoptosis. During my master thesis, I identified the natural compound artesunate as a specific activator of ferroptosis, an iron-dependent cell death pathway, in PDAC cells.  
+                    Oncogenic KRas reprograms pancreatic ductal adenocarcinoma (PDAC) cells to states which are highly resistant to apoptosis. During my master thesis, I identified the natural compound artesunate as a specific activator of ferroptosis, an iron-dependent cell death pathway, in PDAC cells.  <br>
+                    Paper: <a href="https://www.oncoscience.us/article/160/text/">Identification of artesunate as a specific activator of ferroptosis in pancreatic cancer cells</a>
                 </p>
             </div>
         </div>
