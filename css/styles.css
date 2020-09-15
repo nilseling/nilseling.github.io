@@ -594,7 +594,7 @@ html, body {
   display: flex;
   align-items: center;
   min-height: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 
 
