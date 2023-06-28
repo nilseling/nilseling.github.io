@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.21)  28 JUN 2023 14:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.21)  28 JUN 2023 14:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -937,13 +937,22 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 13.12pt have occurred.
 
-Package rerunfilecheck Info: File `CV_Nils_Eling.out' has not changed.
-(rerunfilecheck)             Checksum: D4507F1CCAF303FC306E6826CA6EEEF1;2657.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `CV_Nils_Eling.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `CV_Nils_Eling.out':
+(rerunfilecheck)             Before: D4507F1CCAF303FC306E6826CA6EEEF1;2657
+(rerunfilecheck)             After:  D51769520FDE690CB9904D809387DC9D;2822.
  ) 
 Here is how much of TeX's memory you used:
- 26004 strings out of 476025
- 503071 string characters out of 5790023
- 1886388 words of memory out of 5000000
+ 26005 strings out of 476025
+ 503082 string characters out of 5790023
+ 1885388 words of memory out of 5000000
  45913 multiletter control sequences out of 15000+600000
  524806 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -961,10 +970,10 @@ lic/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publ
 ic/cm-super/sfsl1095.pfb>
-Output written on CV_Nils_Eling.pdf (5 pages, 167880 bytes).
+Output written on CV_Nils_Eling.pdf (5 pages, 167899 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
- 167 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
+ 202 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
  43197 words of extra memory for PDF output out of 51595 (max. 10000000)
 
